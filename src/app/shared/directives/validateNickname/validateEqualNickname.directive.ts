@@ -8,7 +8,7 @@
                 require: 'ngModel',
                 link:function($scope, element, attrs, ctrl) {
                     ctrl.$validators.checkEqualNickname = function(modelValue, viewValue) {
-                        if ($scope.loadNickname === viewValue) {
+                        if (attrs.validateEqualNickname === viewValue) {
                                 return true;
                         }
                         return false;

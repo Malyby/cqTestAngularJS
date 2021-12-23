@@ -12,8 +12,8 @@
                         Search 
                             .get({"phone": viewValue})
                             .$promise
-                            .then(function(res) {
-                                if (res.length === 1 && res[0] && res[0].id !== $scope.id) {
+                            .then(function(player) {
+                                if (player.length === 1 && player[0].id != attrs.validateUniquePhone) {
                                     return def.reject();
                                 }
                                 return def.resolve();

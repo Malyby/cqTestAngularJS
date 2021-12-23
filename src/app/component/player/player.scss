@@ -3,9 +3,15 @@ player {
         top: 10px;
     }
     .games {
-        .add_game {
+        .card-header {
             display: flex;
-            cursor: pointer;
+            justify-content: flex-start;
+            align-items: center;
+            .add_game {
+                display: flex;
+                cursor: pointer;
+                margin-left: 5px;
+            }
         }
     }
 }

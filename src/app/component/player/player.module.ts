@@ -1,7 +1,4 @@
-(function () {
-    'use strict';
+import angular from "angular";
     
-    angular.module("player", ["playerService"]);
-    
-    require('./player.component.ts');
-})();
+angular.module("player", ["playerService"]);  
+require('./player.component.ts');
